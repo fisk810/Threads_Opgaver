@@ -13,12 +13,12 @@ public class ThreadMandelbrot implements Runnable {
     int minWidth = 0;
     BufferedImage img;
 
-    public ThreadMandelbrot(int maxHeight, int maxWidth, int minHeight, int minWidth, BufferedImage img) {
-        this.maxHeight = maxHeight;
-        this.maxWidth = maxWidth;
-        this.minHeight = minHeight;
-        this.minWidth = minWidth;
+    public ThreadMandelbrot(int maxHeight, int minHeight, int maxWidth, int minWidth, BufferedImage img) {
         this.img = img;
+        this.maxHeight = maxHeight;
+        this.minHeight = minHeight;
+        this.maxWidth = maxWidth;
+        this.minWidth = minWidth;
     }
 
     public void run() {
